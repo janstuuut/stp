@@ -1,0 +1,289 @@
+ /* Menambahkan ukuran dan style untuk gambar */
+ .swiper-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Mengatur agar gambar berada di tengah secara horizontal */
+}
+
+/* Mengatur kontainer yang membungkus gambar dan teks di swiper slide */
+.swiper-slide {
+  position: relative;
+  text-align: center;
+}
+
+/* Mengatur teks keterangan yang ada di bawah gambar */
+.swiper-slide div {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  color: white;
+  text-align: center;
+}
+
+/* body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+background-color: #f0f0f0;
+} */
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+
+.card-wrapper {
+background-color: #f8f8f8;
+padding: 15px;
+border-radius: 5px;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-title {
+font-size: 18px;
+font-weight: bold;
+margin-top: 10px;
+}
+
+.card-description {
+font-size: 14px;
+color: #666;
+}
+
+.card-content {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100%;
+}
+
+.hr {
+border: none;
+border-top: 2px solid #ccc;
+margin: 20px auto;
+width: 50%;
+}
+
+@media (max-width: 979px) {
+body {
+  padding-top: 0px;
+}
+}
+*{
+font-family: 'Raleway', sans-serif;
+}
+h2{
+color: rgb(37, 28, 28);
+font-family: 'Raleway', sans-serif;
+text-align: center;
+
+}
+
+@media (min-width: 576px) {
+
+.gallery-block.compact-gallery .item .description {
+  opacity: 0; 
+}
+
+.gallery-block.compact-gallery .item a:hover .description {
+  opacity: 1; 
+} 
+
+.gallery-block .zoom-on-hover:hover .image {
+  transform: scale(1.3);
+  opacity: 0.7; 
+}
+}
+
+/* CARD GALLERY.CSS */
+
+
+.gallery-block{
+padding-top: 40px;
+}
+
+.gallery-block .heading{
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+
+
+.gallery-block.cards-gallery h6 {
+font-size: 17px;
+font-weight: bold; 
+}
+
+.gallery-block.cards-gallery .card{
+transition: 0.4s ease; 
+}
+
+.gallery-block.cards-gallery .card-body {
+text-align: center; 
+}
+
+.gallery-block.cards-gallery .card-body p {
+font-size: 15px; 
+}
+
+.gallery-block.cards-gallery a {
+color: #212529; 
+}
+
+.gallery-block.cards-gallery a:hover {
+text-decoration: none; 
+}
+
+.gallery-block.cards-gallery .card {
+margin-bottom: 10px; 
+/* box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15); */
+}
+
+.centered-image img {
+display: block;
+margin: 0 auto;
+max-width: 100%;
+max-height: 100%;
+}
+
+@media (min-width: 576px) {
+
+.gallery-block .transform-on-hover:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important; 
+}
+}
+
+/* Tambahkan kode berikut di bawah kode CSS yang sudah ada */
+.portfolio-details-slider .swiper-slide {
+position: relative;
+}
+
+.image-caption {
+position: absolute;
+bottom: 10px;
+left: 10px;
+background-color: rgba(255, 255, 255, 0.7);
+padding: 5px 10px;
+color: #333;
+font-weight: bold;
+border-radius: 5px;
+max-width: 15%;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+/* Tambahkan kode berikut di bawah kode CSS yang sudah ada */
+.about__description {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+/* Tambahkan kode berikut di bawah kode CSS yang sudah ada */
+.gallery-container {
+display: flex;
+justify-content: space-between;
+max-width: 950px;
+margin: 0 auto;
+}
+
+.gallery-item {
+flex: 0 0 30%;
+max-width: 30%;
+border-radius: 5px;
+overflow: hidden;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+/* Reset CSS */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav__links li {
+  margin-right: 20px;
+}
+
+.nav__links li:last-child {
+  margin-right: 0;
+}
+
+.nav__links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+.nav__links a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav__links a:hover::before {
+  transform: scaleX(1);
+}
+
+/* Animasi pada Logo */
+.logo img {
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.2);
+}
+
+
+
+/* Tambahkan styling tambahan sesuai kebutuhan */
+
+
+
